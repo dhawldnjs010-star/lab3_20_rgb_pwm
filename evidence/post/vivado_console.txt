@@ -1,0 +1,140 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 12-sep-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep 28 15:13:49 2026
+# Process ID         : 15244
+# Current directory  : C:/Users/박건우/AppData/Roaming/Xilinx/Vivado
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent17128
+# Log file           : C:/Users/박건우/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file       : C:/Users/박건우/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Running On         : DESKTOP-VM8EHT6
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450H
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16869 MB
+# Swap memory        : 9126 MB
+# Total Virtual      : 25995 MB
+# Available Virtual  : 9297 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/UOS_ECE_project3/lab3_25_uart_echo/vivado/uart_echo.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/UOS_ECE_project3/lab3_25_uart_echo/vivado/uart_echo.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1729.418 ; gain = 98.105
+update_compile_order -fileset sources_1
+close_project
+open_project C:/UOS_ECE_project3/lab3_20_rgb_pwm/vivado/rgb_pwm.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/UOS_ECE_project3/lab3_20_rgb_pwm/vivado/rgb_pwm.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation  -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Sep 28 15:16:53 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_rgb_pwm'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/UOS_ECE_project3/lab3_20_rgb_pwm/vivado/rgb_pwm.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_rgb_pwm' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/UOS_ECE_project3/lab3_20_rgb_pwm/vivado/rgb_pwm.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_rgb_pwm_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/UOS_ECE_project3/lab3_20_rgb_pwm/vivado/rgb_pwm.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rgb_pwm_behav xil_defaultlib.tb_rgb_pwm xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_rgb_pwm_behav xil_defaultlib.tb_rgb_pwm xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/UOS_ECE_project3/lab3_20_rgb_pwm/vivado/rgb_pwm.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_rgb_pwm_behav -key {Behavioral:sim_1:Functional:tb_rgb_pwm} -tclbatch {tb_rgb_pwm.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_rgb_pwm.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+LAB3_RGB_PWM_PASS checks=2
+$finish called at time : 4431 ns : File "C:/UOS_ECE_project3/lab3_20_rgb_pwm/sim/tb_rgb_pwm.sv" Line 26
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_rgb_pwm_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1741.648 ; gain = 0.000
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7s75fgga484-1
+INFO: [Device 21-403] Loading part xc7s75fgga484-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2009.461 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/UOS_ECE_project3/lab3_20_rgb_pwm/constraints/lab3_rgb_pwm.xdc]
+Finished Parsing XDC File [C:/UOS_ECE_project3/lab3_20_rgb_pwm/constraints/lab3_rgb_pwm.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2052.613 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 2595.516 ; gain = 586.055
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project C:/UOS_ECE_project3/lab3_22_stepper/vivado/stepper.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/UOS_ECE_project3/lab3_22_stepper/vivado/stepper.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7s75fgga484-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2793.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Parsing XDC File [C:/UOS_ECE_project3/lab3_22_stepper/constraints/lab3_stepper.xdc]
+Finished Parsing XDC File [C:/UOS_ECE_project3/lab3_22_stepper/constraints/lab3_stepper.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Common 17-344] 'open_run' was cancelled
